@@ -1,102 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <title>Alışveriş Sepeti</title>
-</head>
-<style>
-    th{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-        font-size:small;
+  </head>
+  <style>
+    th {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: small;
     }
-    td{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-        font-size:small;
+    td {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: small;
     }
-    button{
-        align-content: flex-end;
+    button {
+      align-content: flex-end;
     }
-</style>
+  </style>
 
-<body>
-    <table border="0" style="height:auto ; width: auto ;" align="center" >
-        <thead style="background-color:#3F3F3F ; color: aliceblue; ">
-            <tr>
-                <th style="text-align:start ; width: 20%;">Ürün Kodu</th>
-                <th  width="30%" style="text-align:start ;">Ürün Adı</th>
-                <th>Miktar</th>
-                <th style="text-align:end ;" width="center">Birim Fiyat</th>
-                <th style="text-align: end;">Ara Toplam</th>
-                <th width="13%"></th>
-            </tr>
-        </thead>
+  <body>
+    <table border="0" style="height: auto; width: auto" align="center">
+      <thead style="background-color: #3f3f3f; color: aliceblue">
+        <tr>
+          <th style="text-align: start; width: 20%">Ürün Kodu</th>
+          <th width="30%" style="text-align: start">Ürün Adı</th>
+          <th>Miktar</th>
+          <th style="text-align: end" width="center">Birim Fiyat</th>
+          <th style="text-align: end">Ara Toplam</th>
+          <th width="13%"></th>
+        </tr>
+      </thead>
 
-        <tbody>
-            <tr style="background-color: #CDCDCD;">
-                <td>154654</td>
-                <td>Notebook</td>
-                <td style="text-align: center ;">1</td>
-                <td style="text-align:end ;">5.400₺</td>
-                <td style="text-align:end ;">5.400₺</td>
-                <td width="10%" style="text-align:center ;"><i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i style="text-align: end ;" class="fa-solid fa-trash-can"></i></td>
-                
-            </tr>
-            <tr style="background-color:#E8E8E8 ;">
-                <td>456466</td>
-                <td>Klavye</td>
-                <td style="text-align: center ;">2</td>
-                <td style="text-align:end ;">80₺</td>
-                <td style="text-align:end ;">160₺</td>
-                <td width="10%" style="text-align:center ;"><i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i style="text-align: end ;" class="fa-solid fa-trash-can"></i></td>
-            </tr>
-            <tr style="background-color: #CDCDCD;">
-                <td>564646</td>
-                <td>Monitör</td>
-                <td style="text-align: center ;">1</td>
-                <td style="text-align:end ;">700₺</td>
-                <td style="text-align:end ;">700₺</td>
-                <td width="10%" style="text-align:center ;"><i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i style="text-align: end ;" class="fa-solid fa-trash-can"></i></td>
-            </tr>
-            <tr style="background-color:#E8E8E8 ;">
-                <td>123598</td>
-                <td>mouse</td>
-                <td style="text-align: center ;">2</td>
-                <td style="text-align:end ;">50₺</td>
-                <td style="text-align:end ;">100₺</td>
-                <td width="10%" style="text-align:center ;"><i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i style="text-align: end ;" class="fa-solid fa-trash-can"></i></td>
-            </tr>
-            <tr style="background-color: #CDCDCD;">
-                <td>613448</td>
-                <td>Play Station</td>
-                <td style="text-align: center ;">1</td>
-                <td style="text-align:end ;">2.500₺</td>
-                <td style="text-align:end ;">2.500₺</td>
-                <td width="10%" style="text-align:center ;"><i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i style="text-align: end ;" class="fa-solid fa-trash-can"></i></td>
-            </tr>
-            <tr style="background-color:#E8E8E8 ;">
-                <td>789799</td>
-                <td>Usb Bellek</td>
-                <td style="text-align: center ;">3</td>
-                <td style="text-align:end ;">120₺</td>
-                <td style="text-align:end ;">360₺</td>
-                <td width="10%" style="text-align:center ;"><i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i style="text-align: end ;" class="fa-solid fa-trash-can"></i></td>
-            </tr>
-            <tr style="background-color:#3F3F3F ; color: aliceblue; ">
-                <td colspan="4" style="text-align:end ;">TOPLAM</td>
-                <td style="text-align:end ;">9.220₺</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td colspan="2" style="text-align: right ;"><button style="height: 30px; height: 35px; width: auto; text-align: right; background-color: #EE755F; border: #EE755F; color: white;" ><i class="fa-solid fa-cart-shopping" style="text-align: left; color: black;"></i> Alışverişe Devam</button>
-                </td>
-                <td colspan="2"><button style="height: 35px; width: auto ; text-align: right; background-color: #EE755F; border: #EE755F;color: white;"><i class="fa-regular fa-credit-card" style="text-align: left; color: black;"></i> Ödemeye Geç</button></td>
-            </tr>
-        </tbody>
+      <tbody>
+        <tr style="background-color: #cdcdcd">
+          <td>154654</td>
+          <td>Notebook</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: end">5.400₺</td>
+          <td style="text-align: end">5.400₺</td>
+          <td width="10%" style="text-align: center">
+            <i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i
+              style="text-align: end"
+              class="fa-solid fa-trash-can"
+            ></i>
+          </td>
+        </tr>
+        <tr style="background-color: #e8e8e8">
+          <td>456466</td>
+          <td>Klavye</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: end">80₺</td>
+          <td style="text-align: end">160₺</td>
+          <td width="10%" style="text-align: center">
+            <i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i
+              style="text-align: end"
+              class="fa-solid fa-trash-can"
+            ></i>
+          </td>
+        </tr>
+        <tr style="background-color: #cdcdcd">
+          <td>564646</td>
+          <td>Monitör</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: end">700₺</td>
+          <td style="text-align: end">700₺</td>
+          <td width="10%" style="text-align: center">
+            <i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i
+              style="text-align: end"
+              class="fa-solid fa-trash-can"
+            ></i>
+          </td>
+        </tr>
+        <tr style="background-color: #e8e8e8">
+          <td>123598</td>
+          <td>mouse</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: end">50₺</td>
+          <td style="text-align: end">100₺</td>
+          <td width="10%" style="text-align: center">
+            <i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i
+              style="text-align: end"
+              class="fa-solid fa-trash-can"
+            ></i>
+          </td>
+        </tr>
+        <tr style="background-color: #cdcdcd">
+          <td>613448</td>
+          <td>Play Station</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: end">2.500₺</td>
+          <td style="text-align: end">2.500₺</td>
+          <td width="10%" style="text-align: center">
+            <i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i
+              style="text-align: end"
+              class="fa-solid fa-trash-can"
+            ></i>
+          </td>
+        </tr>
+        <tr style="background-color: #e8e8e8">
+          <td>789799</td>
+          <td>Usb Bellek</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: end">120₺</td>
+          <td style="text-align: end">360₺</td>
+          <td width="10%" style="text-align: center">
+            <i class="fa-solid fa-pen-to-square"></i>&ensp;&ensp;&ensp;<i
+              style="text-align: end"
+              class="fa-solid fa-trash-can"
+            ></i>
+          </td>
+        </tr>
+        <tr style="background-color: #3f3f3f; color: aliceblue">
+          <td colspan="4" style="text-align: end">TOPLAM</td>
+          <td style="text-align: end">9.220₺</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="2" style="text-align: right">
+            <button
+              style="
+                height: 30px;
+                height: 35px;
+                width: auto;
+                text-align: right;
+                background-color: #ee755f;
+                border: #ee755f;
+                color: white;
+              "
+            >
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="text-align: left; color: black"
+              ></i>
+              Alışverişe Devam
+            </button>
+          </td>
+          <td colspan="2">
+            <button
+              style="
+                height: 35px;
+                width: auto;
+                text-align: right;
+                background-color: #ee755f;
+                border: #ee755f;
+                color: white;
+              "
+            >
+              <i
+                class="fa-regular fa-credit-card"
+                style="text-align: left; color: black"
+              ></i>
+              Ödemeye Geç
+            </button>
+          </td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>
